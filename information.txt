@@ -1,7 +1,7 @@
 EVENTS AND STATE
 
 What is state?:
-States are what users interact with on a App. They determines how an object is rendered and behave throughout the life cycle of an application
+States are what users interact with on a App. They determines how an object is rendered and behave throughout the life cycle of an application.
 
 Element:
 
@@ -18,10 +18,33 @@ render() {
                 </Text>
             </View>
       );
-   }  
+   } 
+----state updating----
+state = {
+      myState: 'State is an object that stores the "state" of a component.'
+    }
+updateState = () => {
+        this.setState({ 
+            myState: 'This string state is updated!' 
+        })
+    }
+render() {
+      return (
+           <View>
+               <Text
+                    onPress = {this.updateState}
+                >
+                    {this.state.myState}
+                </Text>
+            </View>
+      );
+   }
+}
 
 How to use it:
 ----state----
 {this.state.myState} calls the state with the myState in it to view in the <Text>
+----state updating----
+onPress = {this.updateState} when you click on the text the state update changing it from the state to the updatedState.
 
 Example:
