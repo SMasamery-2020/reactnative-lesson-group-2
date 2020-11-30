@@ -1,5 +1,8 @@
 EVENTS AND STATE
 
+What is state?:
+States are what users interact with on a App. They determines how an object is rendered and behave throughout the life cycle of an application
+
 Element:
 
 syntax:
