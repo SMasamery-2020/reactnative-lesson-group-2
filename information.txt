@@ -5,8 +5,23 @@ States are what users interact with on a App. They determines how an object is r
 
 Element:
 
-syntax:
+Syntax:
+----state----
+state = {
+      myState: 'State is an object that stores the "state" of a component.'
+    }
+render() {
+        return (
+            <View>
+                <Text>
+                    {this.state.myState}
+                </Text>
+            </View>
+      );
+   }  
 
 How to use it:
+----state----
+{this.state.myState} calls the state with the myState in it to view in the <Text>
 
-example:
+Example:
