@@ -4,6 +4,14 @@ What is state?:
 States are what users interact with on a App. They determines how an object is rendered and behave throughout the life cycle of an application.
 
 Element:
+{this.state.myState} 
+state = {
+      myState: ''
+    }
+updateState = () => {
+        this.setState({ 
+            myState: '' 
+        })
 
 Syntax:
 ----state----
@@ -18,7 +26,8 @@ render() {
                 </Text>
             </View>
       );
-   } 
+   }
+   
 ----state updating----
 state = {
       myState: 'State is an object that stores the "state" of a component.'
@@ -44,7 +53,6 @@ render() {
 How to use it:
 ----state----
 {this.state.myState} calls the state with the myState in it to view in the <Text>
+
 ----state updating----
 onPress = {this.updateState} when you click on the text the state update changing it from the state to the updatedState.
-
-Example:
